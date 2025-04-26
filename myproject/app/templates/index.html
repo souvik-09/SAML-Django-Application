@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div>
+    {% if nickname %}
+    <p>{{ nickname }} is logged in</p>
+	<p>Your mail is {{ mail }} </p>
+	<p>Your lastname is {{ lastname }} </p>
+    <form action="{% url 'logout' %}" method="get">
+        <button type="submit">Logout</button>
+    </form>
+    {% else %}
+        <form action="{% url 'login' %}" method="get">
+        <button type="submit">Login</button>
+    </form>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "https://application_url:8000/",
+        "assertionConsumerService": {
+            "url": "https://application_url:8000/user/login/saml/",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "https://application_url:8000/user/logout/",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "xxxxxxxxxxxxxxxxx",
+        "privateKey": "xxxxxxxxxxxxxxxx"
+    },
+    "idp": {
+        "entityId": "https://idp_url_goes_here/nidp/saml2/metadata",
+        "singleSignOnService": {
+            "url": "https://idp_url_goes_here/nidp/saml2/sso",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "https://idp_url_goes_here/nidp/saml2/spslo",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "xxxxxxxxxxxxxxxxxxxxxxxx"
+    }
+}

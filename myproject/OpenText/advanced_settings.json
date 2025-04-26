@@ -1,0 +1,36 @@
+{
+    "security": {
+        "nameIdEncrypted": false,
+        "authnRequestsSigned": false,
+        "logoutRequestSigned": false,
+        "logoutResponseSigned": false,
+        "signMetadata": false,
+        "wantMessagesSigned": false,
+        "wantAssertionsSigned": false,
+        "wantNameId" : true,
+        "wantNameIdEncrypted": false,
+        "wantAssertionsEncrypted": false,
+        "wantAttributeStatement": true,
+        "allowSingleLabelDomains": false,
+        "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
+        "digestAlgorithm": "http://www.w3.org/2001/04/xmlenc#sha256",
+        "rejectDeprecatedAlgorithm": true
+    },
+    "contactPerson": {
+        "technical": {
+            "givenName": "Souvik Karmakar",
+            "emailAddress": "souvikk066@gmail.com"
+        },
+        "support": {
+            "givenName": "Test",
+            "emailAddress": "test@gmail.com"
+        }
+    },
+    "organization": {
+        "en-US": {
+            "name": "example",
+            "displayname": "Example",
+            "url": "http://sp.example.com"
+        }
+    }
+}
