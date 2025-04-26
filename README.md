@@ -20,7 +20,7 @@ A Django-based web application that implements SAML (Security Assertion Markup L
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/souvik-09/SAML-Django-Application.git
 cd myproject
 ```
 
